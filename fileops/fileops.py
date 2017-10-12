@@ -24,11 +24,3 @@ def dump_file(fname):
                         print (byte);
         fh.close();
         return 0;
-        
-        
-push_to_file("sample.txt", "Hello world1", "w");
-push_to_file("sample.txt", "\nHello world2", "a");
-dump_file("sample.txt");
-
-#fdata = pop_from_file("sample.txt", "r", 1);
-
