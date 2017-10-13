@@ -2,12 +2,14 @@
 
 import os
 
+# To write data to a file
 def push_to_file(fname, data, mode="w"):
         fh = open(fname, mode);
         ret = fh.write(data);
         fh.close();
         return ret;
 
+# To read data to a file
 def pop_from_file(fname, mode="r", line=0):
         fh = open(fname, mode);
         if line :
@@ -17,6 +19,7 @@ def pop_from_file(fname, mode="r", line=0):
         fh.close();
         return fdata;
 
+# To dump file contents
 def dump_file(fname):
         fh = open(fname, 'rb');
         with fh as file:
